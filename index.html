@@ -137,7 +137,6 @@
 
             <!-- Task Cards -->
             <div class="grid grid-cols-3 gap-6">
-
                <!-- ShopEase Card -->
                <div class="bg-[#F4F7FF] p-4 rounded-xl">
                   <h6
@@ -148,7 +147,7 @@
                   <h3 class="text-[#00303C] text-xl font-medium my-3">
                      Fix Mobile Button Issue
                   </h3>
-                  <p class="text-[13px] bg-white p-3 rounded-md">
+                  <p class="text-[13px] text-[#000] bg-white p-3 rounded-md">
                      Debug using Chrome DevTools, check for overlapping
                      elements, and ensure onClick works properly and ensure
                      onClick...
@@ -185,7 +184,7 @@
                   <h3 class="text-[#00303C] text-xl font-medium my-3">
                      Add Dark Mode
                   </h3>
-                  <p class="text-[13px] bg-white p-3 rounded-md">
+                  <p class="text-[13px] text-[#000] bg-white p-3 rounded-md">
                      Debug using Chrome DevTools, check for overlapping
                      elements, and ensure onClick works properly and ensure
                      onClick...
@@ -220,9 +219,9 @@
                      SwiftPay
                   </h6>
                   <h3 class="text-[#00303C] text-xl font-medium my-3">
-                     Optimize  Home page
+                     Optimize Home page
                   </h3>
-                  <p class="text-[13px] bg-white p-3 rounded-md">
+                  <p class="text-[13px] text-[#000] bg-white p-3 rounded-md">
                      Debug using Chrome DevTools, check for overlapping
                      elements, and ensure onClick works properly and ensure
                      onClick...
@@ -259,7 +258,7 @@
                   <h3 class="text-[#00303C] text-xl font-medium my-3">
                      Add new emoji 🤲
                   </h3>
-                  <p class="text-[13px] bg-white p-3 rounded-md">
+                  <p class="text-[13px] text-[#000] bg-white p-3 rounded-md">
                      Debug using Chrome DevTools, check for overlapping
                      elements, and ensure onClick works properly and ensure
                      onClick...
@@ -287,7 +286,7 @@
                </div>
 
                <!-- Google LLC Card -->
-               <div class="bg-[#F4F7FF] p-4 rounded-xl"> 
+               <div class="bg-[#F4F7FF] p-4 rounded-xl">
                   <h6
                      class="bg-white text-[#00303C] text-[13px] py-[5px] px-3 rounded-md w-fit"
                   >
@@ -296,7 +295,7 @@
                   <h3 class="text-[#00303C] text-xl font-medium my-3">
                      Integrate OpenAI API
                   </h3>
-                  <p class="text-[13px] bg-white p-3 rounded-md">
+                  <p class="text-[13px] text-[#000] bg-white p-3 rounded-md">
                      Debug using Chrome DevTools, check for overlapping
                      elements, and ensure onClick works properly and ensure
                      onClick...
@@ -333,7 +332,7 @@
                   <h3 class="text-[#00303C] text-xl font-medium my-3">
                      Improve Job searching
                   </h3>
-                  <p class="text-[13px] bg-white p-3 rounded-md">
+                  <p class="text-[13px] text-[#000] bg-white p-3 rounded-md">
                      Debug using Chrome DevTools, check for overlapping
                      elements, and ensure onClick works properly and ensure
                      onClick...
@@ -359,24 +358,21 @@
                      </div>
                   </div>
                </div>
-
             </div>
          </div>
 
          <!-- Activity Log -->
-         <div class="bg-white w-3/12 rounded-2xl">
-            <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-               beatae aliquid dolore optio exercitationem tempora eaque, sed
-               corrupti reiciendis illo tempore autem distinctio laudantium
-               ratione culpa maxime minima aperiam assumenda aliquam! Enim id
-               perspiciatis odit beatae exercitationem autem, dicta quae quasi
-               amet deserunt fugiat sunt officia fugit possimus explicabo fuga
-               ex nesciunt dignissimos a numquam iusto. Eum amet ea voluptatum
-               eveniet reiciendis! Esse non provident nam accusantium officia
-               quidem labore nemo obcaecati consa facere minus sint rem omnis ut
-               aut incidunt reprehenderit aspernatur obcaecati.
-            </p>
+         <div class="bg-white w-3/12 rounded-2xl text-center">
+            <div class="flex justify-center items-center mt-6 mb-4">
+               <img src="./assets/activity.png" alt="Activity" />
+               <p class="text-[#00303C] font-medium ml-3">Activity Log</p>
+            </div>
+
+            <button
+               class="button text-[13px] py-2 px-4 font-medium text-white bg-[#3752FD] disabled:bg-[#adb6f3] disabled:opacity-80 cursor-pointer hover:scale-105 transition duration-200 rounded-lg"
+            >
+               Clear History
+            </button>
          </div>
       </section>
    </body>
