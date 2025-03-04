@@ -55,23 +55,329 @@
                      checked="checked"
                      class="checkbox checkbox-primary"
                   />
-                  <p id="AssignedCount"
-                     class="ml-3 text-[#1E1E1E] text-[22px] font-bold"
+                  <p
+                     id="AssignedCount"
+                     class="ml-3 text-[#1E1E1E] text-[23px] font-bold"
                   >
                      23
                   </p>
                </div>
 
-               <button id="changeColorBtn" class="p-2 bg-[#F4F7FF] rounded-full ml-[26px]">
-                  <img src="./assets/theme-btn.png" alt="Theme button" class="w-8">
+               <button
+                  id="changeColorBtn"
+                  class="p-2 bg-[#F4F7FF] rounded-full ml-[26px] cursor-pointer"
+               >
+                  <img
+                     src="./assets/theme-btn.png"
+                     alt="Theme button"
+                     class="w-8"
+                  />
                </button>
             </div>
          </div>
       </header>
 
       <!-- Task Assigned Section -->
-      <section>
-         
+      <section class="container mx-auto px-6 flex gap-4 pt-4 pb-10">
+         <div class="bg-white w-9/12 p-4 rounded-2xl">
+            <!-- Task Assigned -->
+            <div class="grid grid-cols-4 gap-4">
+               <!-- Task count -->
+               <div class="flex items-center bg-[#F4F7FF] rounded-lg px-4 py-6">
+                  <div class="p-3 bg-white rounded-full">
+                     <input
+                        type="checkbox"
+                        checked="checked"
+                        class="checkbox checkbox-primary"
+                     />
+                  </div>
+
+                  <div class="text-[#00303C] ml-4">
+                     <p class="text-[15px] font-medium">Task Assigned</p>
+                     <p class="taskAssignedCount text-[23px] font-bold">05</p>
+                  </div>
+               </div>
+
+               <button
+                  id="btn"
+                  class="col-span-2 rounded-lg px-7 cursor-pointer flex items-center bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]"
+               >
+                  <img
+                     src="./assets/board.png"
+                     alt="Board Image"
+                     class="w-14"
+                  />
+                  <p class="text-white text-[17px] font-medium text-start ml-4">
+                     Discover Something <br />
+                     New Today!
+                  </p>
+               </button>
+
+               <!-- Date -->
+               <div class="flex items-center bg-[#F4F7FF] rounded-lg px-4 py-6">
+                  <div class="p-3 bg-white rounded-full">
+                     <img
+                        src="./assets/calender.png"
+                        alt="Calender"
+                        class="w-5"
+                     />
+                  </div>
+
+                  <div class="text-[#00303C] ml-4">
+                     <p class="text-[15px]">Wed,</p>
+                     <p class="taskAssignedCount text-[15px] font-bold">
+                        Jul 28 2025
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Custom Dashed line -->
+            <div class="border border-dashed border-[#3752fd33] my-5"></div>
+
+            <!-- Task Cards -->
+            <div class="grid grid-cols-3 gap-6">
+
+               <!-- ShopEase Card -->
+               <div class="bg-[#F4F7FF] p-4 rounded-xl">
+                  <h6
+                     class="bg-white text-[#00303C] text-[13px] py-[5px] px-3 rounded-md w-fit"
+                  >
+                     ShopEase
+                  </h6>
+                  <h3 class="text-[#00303C] text-xl font-medium my-3">
+                     Fix Mobile Button Issue
+                  </h3>
+                  <p class="text-[13px] bg-white p-3 rounded-md">
+                     Debug using Chrome DevTools, check for overlapping
+                     elements, and ensure onClick works properly and ensure
+                     onClick...
+                  </p>
+
+                  <!-- Custom Dashed line -->
+                  <div
+                     class="border border-dashed border-[#3751fd21] my-3"
+                  ></div>
+
+                  <div class="flex justify-between items-center">
+                     <div class="text-[#00303C]">
+                        <p class="text-[12px]">Deadline</p>
+                        <p class="text-[13px] font-medium">21 March 2025</p>
+                     </div>
+
+                     <div>
+                        <button
+                           class="button text-[13px] py-2 px-4 font-medium text-white bg-[#3752FD] disabled:bg-[#adb6f3] disabled:opacity-80 cursor-pointer hover:scale-105 transition duration-200 rounded-lg"
+                        >
+                           Completed
+                        </button>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- CloudSync Card -->
+               <div class="bg-[#F4F7FF] p-4 rounded-xl">
+                  <h6
+                     class="bg-white text-[#00303C] text-[13px] py-[5px] px-3 rounded-md w-fit"
+                  >
+                     CloudSync
+                  </h6>
+                  <h3 class="text-[#00303C] text-xl font-medium my-3">
+                     Add Dark Mode
+                  </h3>
+                  <p class="text-[13px] bg-white p-3 rounded-md">
+                     Debug using Chrome DevTools, check for overlapping
+                     elements, and ensure onClick works properly and ensure
+                     onClick...
+                  </p>
+
+                  <!-- Custom Dashed line -->
+                  <div
+                     class="border border-dashed border-[#3751fd21] my-3"
+                  ></div>
+
+                  <div class="flex justify-between items-center">
+                     <div class="text-[#00303C]">
+                        <p class="text-[12px]">Deadline</p>
+                        <p class="text-[13px] font-medium">21 March 2025</p>
+                     </div>
+
+                     <div>
+                        <button
+                           class="button text-[13px] py-2 px-4 font-medium text-white bg-[#3752FD] disabled:bg-[#adb6f3] disabled:opacity-80 cursor-pointer hover:scale-105 transition duration-200 rounded-lg"
+                        >
+                           Completed
+                        </button>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- SwiftPay Card -->
+               <div class="bg-[#F4F7FF] p-4 rounded-xl">
+                  <h6
+                     class="bg-white text-[#00303C] text-[13px] py-[5px] px-3 rounded-md w-fit"
+                  >
+                     SwiftPay
+                  </h6>
+                  <h3 class="text-[#00303C] text-xl font-medium my-3">
+                     Optimize  Home page
+                  </h3>
+                  <p class="text-[13px] bg-white p-3 rounded-md">
+                     Debug using Chrome DevTools, check for overlapping
+                     elements, and ensure onClick works properly and ensure
+                     onClick...
+                  </p>
+
+                  <!-- Custom Dashed line -->
+                  <div
+                     class="border border-dashed border-[#3751fd21] my-3"
+                  ></div>
+
+                  <div class="flex justify-between items-center">
+                     <div class="text-[#00303C]">
+                        <p class="text-[12px]">Deadline</p>
+                        <p class="text-[13px] font-medium">21 March 2025</p>
+                     </div>
+
+                     <div>
+                        <button
+                           class="button text-[13px] py-2 px-4 font-medium text-white bg-[#3752FD] disabled:bg-[#adb6f3] disabled:opacity-80 cursor-pointer hover:scale-105 transition duration-200 rounded-lg"
+                        >
+                           Completed
+                        </button>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Meta Card -->
+               <div class="bg-[#F4F7FF] p-4 rounded-xl">
+                  <h6
+                     class="bg-white text-[#00303C] text-[13px] py-[5px] px-3 rounded-md w-fit"
+                  >
+                     Meta
+                  </h6>
+                  <h3 class="text-[#00303C] text-xl font-medium my-3">
+                     Add new emoji 🤲
+                  </h3>
+                  <p class="text-[13px] bg-white p-3 rounded-md">
+                     Debug using Chrome DevTools, check for overlapping
+                     elements, and ensure onClick works properly and ensure
+                     onClick...
+                  </p>
+
+                  <!-- Custom Dashed line -->
+                  <div
+                     class="border border-dashed border-[#3751fd21] my-3"
+                  ></div>
+
+                  <div class="flex justify-between items-center">
+                     <div class="text-[#00303C]">
+                        <p class="text-[12px]">Deadline</p>
+                        <p class="text-[13px] font-medium">21 March 2025</p>
+                     </div>
+
+                     <div>
+                        <button
+                           class="button text-[13px] py-2 px-4 font-medium text-white bg-[#3752FD] disabled:bg-[#adb6f3] disabled:opacity-80 cursor-pointer hover:scale-105 transition duration-200 rounded-lg"
+                        >
+                           Completed
+                        </button>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Google LLC Card -->
+               <div class="bg-[#F4F7FF] p-4 rounded-xl"> 
+                  <h6
+                     class="bg-white text-[#00303C] text-[13px] py-[5px] px-3 rounded-md w-fit"
+                  >
+                     Google LLC
+                  </h6>
+                  <h3 class="text-[#00303C] text-xl font-medium my-3">
+                     Integrate OpenAI API
+                  </h3>
+                  <p class="text-[13px] bg-white p-3 rounded-md">
+                     Debug using Chrome DevTools, check for overlapping
+                     elements, and ensure onClick works properly and ensure
+                     onClick...
+                  </p>
+
+                  <!-- Custom Dashed line -->
+                  <div
+                     class="border border-dashed border-[#3751fd21] my-3"
+                  ></div>
+
+                  <div class="flex justify-between items-center">
+                     <div class="text-[#00303C]">
+                        <p class="text-[12px]">Deadline</p>
+                        <p class="text-[13px] font-medium">21 March 2025</p>
+                     </div>
+
+                     <div>
+                        <button
+                           class="button text-[13px] py-2 px-4 font-medium text-white bg-[#3752FD] disabled:bg-[#adb6f3] disabled:opacity-80 cursor-pointer hover:scale-105 transition duration-200 rounded-lg"
+                        >
+                           Completed
+                        </button>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- GlassDoor Card -->
+               <div class="bg-[#F4F7FF] p-4 rounded-xl">
+                  <h6
+                     class="bg-white text-[#00303C] text-[13px] py-[5px] px-3 rounded-md w-fit"
+                  >
+                     Glassdoor
+                  </h6>
+                  <h3 class="text-[#00303C] text-xl font-medium my-3">
+                     Improve Job searching
+                  </h3>
+                  <p class="text-[13px] bg-white p-3 rounded-md">
+                     Debug using Chrome DevTools, check for overlapping
+                     elements, and ensure onClick works properly and ensure
+                     onClick...
+                  </p>
+
+                  <!-- Custom Dashed line -->
+                  <div
+                     class="border border-dashed border-[#3751fd21] my-3"
+                  ></div>
+
+                  <div class="flex justify-between items-center">
+                     <div class="text-[#00303C]">
+                        <p class="text-[12px]">Deadline</p>
+                        <p class="text-[13px] font-medium">21 March 2025</p>
+                     </div>
+
+                     <div>
+                        <button
+                           class="button text-[13px] py-2 px-4 font-medium text-white bg-[#3752FD] disabled:bg-[#adb6f3] disabled:opacity-80 cursor-pointer hover:scale-105 transition duration-200 rounded-lg"
+                        >
+                           Completed
+                        </button>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+         <!-- Activity Log -->
+         <div class="bg-white w-3/12 rounded-2xl">
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+               beatae aliquid dolore optio exercitationem tempora eaque, sed
+               corrupti reiciendis illo tempore autem distinctio laudantium
+               ratione culpa maxime minima aperiam assumenda aliquam! Enim id
+               perspiciatis odit beatae exercitationem autem, dicta quae quasi
+               amet deserunt fugiat sunt officia fugit possimus explicabo fuga
+               ex nesciunt dignissimos a numquam iusto. Eum amet ea voluptatum
+               eveniet reiciendis! Esse non provident nam accusantium officia
+               quidem labore nemo obcaecati consa facere minus sint rem omnis ut
+               aut incidunt reprehenderit aspernatur obcaecati.
+            </p>
+         </div>
       </section>
    </body>
 </html>
