@@ -16,12 +16,10 @@ for (let button of cardButtons) {
       completeTaskCount++;
       completeTask.textContent = completeTaskCount;
 
-      // Current Time
       const currentTime = new Date().toLocaleTimeString("en-US", {
          hour12: true,
       });
 
-      // Add activity task history
       const cardTitle =
          e.target.parentNode.parentNode.querySelector(".cardTitle").textContent;
 
@@ -32,14 +30,12 @@ for (let button of cardButtons) {
       `;
       activityHistory.appendChild(div);
 
-      // Open last alert
       clickCount++;
       if (clickCount === 6) {
          window.alert("Congrats!!! You have completed all the current task");
          clickCount = 0;
       }
 
-      // Clear activity history
       document
          .querySelector(".clearHistory")
          .addEventListener("click", function () {
@@ -48,32 +44,32 @@ for (let button of cardButtons) {
    });
 }
 
-
-// Redirect blog page
 document.getElementById("homeBtn").addEventListener("click", function () {
    window.location.href = "./blog.html";
 });
 
-
-// Current Date
 let date = new Date();
 let currentDay = date.toLocaleDateString("en-US", { weekday: "short" });
-let currentDate = date.toLocaleDateString("en-US", {
-   month: "short",
-   day: "numeric",
-   year: "numeric",
-}).replace(/,/, "");
+let currentDate = date
+   .toLocaleDateString("en-US", {
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+   })
+   .replace(/,/, "");
 
 document.querySelector(".dayName").textContent = currentDay;
 document.querySelector(".currentDate").textContent = currentDate;
 
-// Random color
-document.getElementById("changeColorBtn").addEventListener("click", function () {
-   const rgbaColor = `rgba(${Math.floor(Math.random() * 256)}, ${Math.floor(
-      Math.random() * 256
-   )}, ${Math.floor(Math.random() * 256)}, ${(Math.random() * 0.9).toFixed(1)})`;
-   
-   document.body.style.backgroundColor = rgbaColor;
-   document.body.style.transition = "background-color .5s ease-in-out";
-});
+document
+   .getElementById("changeColorBtn")
+   .addEventListener("click", function () {
+      const rgbaColor = `rgba(${Math.floor(Math.random() * 256)}, ${Math.floor(
+         Math.random() * 256
+      )}, ${Math.floor(Math.random() * 256)}, ${(Math.random() * 0.9).toFixed(
+         1
+      )})`;
 
+      document.body.style.backgroundColor = rgbaColor;
+      document.body.style.transition = "background-color .5s ease-in-out";
+   });
