@@ -20,10 +20,12 @@ for (let button of buttons) {
       const cardTitle =
          e.target.parentNode.parentNode.querySelector(".cardTitle").textContent;
 
+      const currentTime = new Date().toLocaleTimeString("en-US", { hour12: true });
+      
       const activityHistory = document.getElementById("activityHistory");
       const div = document.createElement("div");
       div.innerHTML = `
-         <p class="text-[#000] text-[13px] text-start rounded-md bg-[#F4F7FF] p-3">You have Complete The Task ${cardTitle} at 12:48:15 PM</p>
+         <p class="text-[#000] text-[13px] text-start rounded-md bg-[#F4F7FF] p-3">You have Complete The Task ${cardTitle} at ${currentTime}</p>
       `;
       activityHistory.appendChild(div);
 
