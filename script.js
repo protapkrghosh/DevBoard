@@ -16,12 +16,15 @@ for (let button of buttons) {
       completeTaskCount++;
       completeTask.textContent = completeTaskCount;
 
+      // Current Time
+      const currentTime = new Date().toLocaleTimeString("en-US", {
+         hour12: true,
+      });
+
       // Add activity task history
       const cardTitle =
          e.target.parentNode.parentNode.querySelector(".cardTitle").textContent;
 
-      const currentTime = new Date().toLocaleTimeString("en-US", { hour12: true });
-      
       const activityHistory = document.getElementById("activityHistory");
       const div = document.createElement("div");
       div.innerHTML = `
@@ -44,3 +47,15 @@ for (let button of buttons) {
          });
    });
 }
+
+// Current Date
+let date = new Date();
+let currentDay = date.toLocaleDateString("en-US", { weekday: "short" });
+let currentDate = date.toLocaleDateString("en-US", {
+   month: "short",
+   day: "numeric",
+   year: "numeric",
+}).replace(/,/, "");
+
+document.querySelector(".dayName").textContent = currentDay;
+document.querySelector(".currentDate").textContent = currentDate;
