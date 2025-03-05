@@ -13,6 +13,10 @@ for (let button of buttons) {
          taskCount.textContent = taskCountNum;
       }
 
+      const completeTask = document.querySelector(".completedTask");
+      let completeTaskCount = Number(completeTask.textContent);
+      completeTaskCount++;
+      completeTask.textContent = completeTaskCount;
 
       clickCount++;
       console.log(clickCount);
