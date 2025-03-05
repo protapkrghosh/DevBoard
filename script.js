@@ -1,6 +1,6 @@
 let clickCount = 0;
-let buttons = document.querySelectorAll(".button");
-for (let button of buttons) {
+let cardButtons = document.querySelectorAll(".button");
+for (let button of cardButtons) {
    button.addEventListener("click", function (e) {
       window.alert("Board updated successfully");
       e.target.setAttribute("disabled", true);
@@ -48,6 +48,7 @@ for (let button of buttons) {
    });
 }
 
+
 // Current Date
 let date = new Date();
 let currentDay = date.toLocaleDateString("en-US", { weekday: "short" });
@@ -59,3 +60,14 @@ let currentDate = date.toLocaleDateString("en-US", {
 
 document.querySelector(".dayName").textContent = currentDay;
 document.querySelector(".currentDate").textContent = currentDate;
+
+// Random color
+document.getElementById("changeColorBtn").addEventListener("click", function () {
+   const rgbaColor = `rgba(${Math.floor(Math.random() * 256)}, ${Math.floor(
+      Math.random() * 256
+   )}, ${Math.floor(Math.random() * 256)}, ${(Math.random() * 0.9).toFixed(1)})`;
+   
+   document.body.style.backgroundColor = rgbaColor;
+   document.body.style.transition = "background-color .5s ease-in-out";
+});
+
