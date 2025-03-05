@@ -49,6 +49,12 @@ for (let button of cardButtons) {
 }
 
 
+// Redirect blog page
+document.getElementById("homeBtn").addEventListener("click", function () {
+   window.location.href = "./blog.html";
+});
+
+
 // Current Date
 let date = new Date();
 let currentDay = date.toLocaleDateString("en-US", { weekday: "short" });

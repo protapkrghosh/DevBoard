@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>DevBoard | Blog</title>
+      <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+
+      <!-- Tailwind CSS CDN Link -->
+      <link
+         href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+         rel="stylesheet"
+         type="text/css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- Style -->
+      <style>
+         body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f4f7ff;
+         }
+      </style>
+   </head>
+
+   <body class="min-h-screen">
+      <!-- NavBar -->
+      <header class="container mx-auto px-6 pt-6">
+         <div class="navbar bg-white rounded-xl p-4">
+            <div class="navbar-start">
+               <!-- Logo Area -->
+               <div class="flex items-center cursor-pointer">
+                  <img src="./assets/logo.png" alt="Logo" class="w-9 h-9" />
+                  <p class="text-[#00303C] text-2xl ml-2">
+                     <span class="font-light">Dev</span
+                     ><span class="font-bold">Board</span>
+                  </p>
+               </div>
+            </div>
+
+            <!-- Back to desk -->
+            <div class="navbar-end">
+               <button
+                  id="blogBtn"
+                  class="text-[13px] py-2 px-4 font-medium text-white bg-[#3752FD] cursor-pointer hover:scale-105 transition duration-200 rounded-lg"
+               >
+                  Back To Desk
+               </button>
+            </div>
+         </div>
+      </header>
+
+      <script>
+         document
+            .getElementById("blogBtn")
+            .addEventListener("click", function () {
+               window.location.href = "./index.html";
+            });
+      </script>
+   </body>
+</html>
